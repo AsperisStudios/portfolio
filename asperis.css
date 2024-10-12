@@ -197,3 +197,12 @@ align-items: center;
     }
 }
 
+@media (max-width: 768px)
+{
+    .text a{
+        font-size: 2em;
+    }
+    .social {
+        transform: scale(0.50);
+    }
+}
