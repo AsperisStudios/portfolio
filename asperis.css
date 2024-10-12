@@ -44,6 +44,7 @@
 
 .logo{
     text-transform: uppercase;
+    line-height: 2;
     font-size: 3em;
     cursor: pointer;
     color: #ebfbfb;
@@ -191,18 +192,48 @@ align-items: center;
 
 
 
-@media (max-width: 1050px){
-    .text a{
-        font-size: 3em;
+@media (max-width: 768px) {
+    
+    .text {
+        text-align: left;
+        left: 20px;
+        padding: 0 20px; 
     }
-}
 
-@media (max-width: 768px)
-{
-    .text a{
+    
+    .text a {
         font-size: 2em;
     }
+
+    .showcase header {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    
     .social {
-        transform: scale(0.50);
+        transform: scale(0.40);
+        left: 20px;
+        bottom: 20px;
+        position: fixed;
+        justify-content: flex-start;
+    }
+
+    
+    .logo {
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    
+    .toggle {
+        transform: scale(0.75);
+        right: 20px; 
+    }
+
+    
+    .showcase {
+        padding: 10px;
     }
 }
