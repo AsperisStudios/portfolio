@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="asperis.css">
+        <title>Asperis Sutdiso</title>
+    </head>
+    <body>
+        <section class = "showcase">
+            <header>
+                <h2 class="logo">Asperis Studios</h2>
+                <div class="toggle"></div>
+            </header>
+
+            <video id="background-video" src="2023Reel.mp4" muted autoplay loop></video>
+
+            <div class="Overlay"></div>
+            
+            <div class="text">
+                <!--
+                <h3>Asperis Studios</h3>
+                <h4>Design Through Difficulty</h4>
+                -->
+                
+                <a href ='#'>2024 Reel</a><br>
+                <a href = '#' id="uhc">Utah Hockey Club</a><br>
+                <a href = '#' id="penguins">Pittsburgh Penguins</a><br>
+                <a href = '#' id="bvu">BVU Education</a><br>
+                
+                
+            </div>
+
+            <ul class="social">
+                <li><a href='https://www.behance.net/harlieferguson'><img src="Behance.png" alt=""></a></li>
+                <li><a href='https://www.linkedin.com/in/harlie-ferguson/'><img src="LinkedIn.png" alt=""></a></li>
+                <li><a href='https://x.com/Zoidstien'><img src="Twitter.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Reel</a></li>
+                <li><a href='#'>Utah</a></li>
+                <li><a href='#'>Penguins</a></li>
+                <li><a href='#'>Contact</a></li></div>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+            const backgroundVideo = document.getElementById('background-video')
+            const penguinsLink = document.getElementById('penguins')
+            const uhcLink = document.getElementById('uhc')
+            const bvuLink = document.getElementById('bvu')
+
+            function changeVideo(videoSrc) {
+            backgroundVideo.src = videoSrc;
+            backgroundVideo.play();
+            }
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+
+            penguinsLink.addEventListener('mouseenter', () => {
+                changeVideo('PenguinsGetLoud.mp4');
+            })
+
+            penguinsLink.addEventListener('mouseleave', () => {
+                changeVideo('2023Reel.mp4');
+            })
+
+            uhcLink.addEventListener('mouseenter', () => {
+                changeVideo('UHC.mp4');
+            })
+
+            uhcLink.addEventListener('mouseleave', () => {
+                changeVideo('2023Reel.mp4');
+            })
+
+            bvuLink.addEventListener('mouseenter', () => {
+                changeVideo('BVU.mp4');
+            })
+
+            bvuLink.addEventListener('mouseleave', () => {
+                changeVideo('2023Reel.mp4');
+            })
+
+        </script>
+    </body>
+</html>
