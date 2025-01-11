@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asperis.css">
+    <title>Pittsburgh Penguins Projects</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Pittsburgh Penguins</h2>
+                <div class="toggle"></div>
+        </header>
+        <!--<div class="content">
+            <h1>Pittsburgh Penguins Project</h1>
+            <p>Details about your Pittsburgh Penguins project go here.</p>
+        </div>-->
+
+        <div class="carousel">
+            <button class="carousel_button_left">
+                <img src="Menu.png" alt="">
+            </button>
+
+            <div class="carousel_track_container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/efkLYFPukXA" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allow = "fullscreen">
+                        </iframe>
+                    </li>
+                    <li class="carousel_slide">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/X9_CKMbYOdU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allow = "fullscreen">
+                        </iframe>
+                    </li>
+                    <li class="carousel_slide">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://youtube.com/embed/-mnIIFZ9gfs" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allow = "fullscreen">
+                        </iframe>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel_button_right">
+                <img src="Behance.png" alt="">
+            </button>
+
+            <div class="carousel_nav">
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='#'>Reel</a></li>
+            <li><a href='#'>Utah</a></li>
+            <li><a href='#'>Penguins</a></li>
+            <li><a href='#'>Contact</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+
+    </script>
+</body>
+</html>

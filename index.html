@@ -25,7 +25,7 @@
                 
                 <a href ='#'>2024 Reel</a><br>
                 <a href = '#' id="uhc">Utah Hockey Club</a><br>
-                <a href = '#' id="penguins">Pittsburgh Penguins</a><br>
+                <a href = 'Penguins.html' id="penguins">Pittsburgh Penguins</a><br>
                 <a href = '#' id="bvu">BVU Education</a><br>
                 
                 
@@ -88,6 +88,15 @@
 
             bvuLink.addEventListener('mouseleave', () => {
                 changeVideo('2023Reel.mp4');
+            })
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const videoSources = ['PenguinsGetLoud.mp4','UHC.mp4','BVU.mp4'];
+                videoSources.forEach(src => {
+                    const video = document.createElement('video');
+                    video.src = src;
+                    video.preload = 'auto';
+                })
             })
 
         </script>
