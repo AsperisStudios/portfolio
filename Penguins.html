@@ -12,77 +12,36 @@
             <h2 class="logo">Pittsburgh Penguins</h2>
                 <div class="toggle"></div>
         </header>
-        <!--<div class="content">
-            <h1>Pittsburgh Penguins Project</h1>
-            <p>Details about your Pittsburgh Penguins project go here.</p>
-        </div>-->
-
-        <div class="carousel">
-            <button class="carousel_button_left">
-                <img src="Menu.png" alt="">
-            </button>
-
-            <div class="carousel_track_container">
-                <ul class="carousel_track">
-                    <li class="carousel_slide">
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/efkLYFPukXA" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allow = "fullscreen">
-                        </iframe>
-                    </li>
-                    <li class="carousel_slide">
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/X9_CKMbYOdU" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allow = "fullscreen">
-                        </iframe>
-                    </li>
-                    <li class="carousel_slide">
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://youtube.com/embed/-mnIIFZ9gfs" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allow = "fullscreen">
-                        </iframe>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="carousel_button_right">
-                <img src="Behance.png" alt="">
-            </button>
-
-            <div class="carousel_nav">
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
-            </div>
-
-        </div>
     </section>
 
+    
     <div class="menu">
         <ul>
             <li><a href='index.html'>Home</a></li>
             <li><a href='#'>Reel</a></li>
             <li><a href='#'>Utah</a></li>
-            <li><a href='#'>Penguins</a></li>
+            <li><a href='Penguins.html'>Penguins</a></li>
             <li><a href='#'>Contact</a></li>
         </ul>
     </div>
-    
+
+    <div class = "videoBody">
+
+        <video src="PenguinsGetLoud.mp4" class="centeredTopVid" muted autoplay controls loop>
+            </video>
+            <!--REPLACE THIS WITH A WEBM Loop or Potentially a .Mov at 1920x1080 of the LOGO-->
+        <div class="text">
+            <h2>Pittsburgh Penguins Summer Internship</h2>
+            <h1>Pittsburgh, PA (Remote) | PPG Paints Arena | May-August 2024</h1>
+        </div>
+
+
+        <div class="videoContainer">
+            <iframe 
+              src="https://player.vimeo.com/video/1046185202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">  
+            </iframe>
+        </div>
+    </div>
 
     <script>
         const menuToggle = document.querySelector('.toggle');
@@ -94,5 +53,6 @@
             })
 
     </script>
+
 </body>
 </html>
