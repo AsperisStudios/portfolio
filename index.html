@@ -10,8 +10,8 @@
         <section class = "showcase">
             <header>
                 <h2 class="logo">Asperis Studios</h2>
-                <div class="toggle"></div>
             </header>
+
 
             <video id="background-video" src="2023Reel.mp4" muted autoplay loop></video>
 
@@ -34,6 +34,8 @@
             </ul>
         </section>
 
+        <div class="toggle"></div>
+
         <div class="menu">
             <ul>
                 <li><a href='#'>Home</a></li>
@@ -47,6 +49,7 @@
         <script>
             const menuToggle = document.querySelector('.toggle')
             const showcase = document.querySelector('.showcase')
+            const menu = document.querySelector('.menu')
             const backgroundVideo = document.getElementById('background-video')
             const penguinsLink = document.getElementById('penguins')
             const uhcLink = document.getElementById('uhc')
@@ -60,6 +63,7 @@
             menuToggle.addEventListener('click', () => {
                 menuToggle.classList.toggle('active')
                 showcase.classList.toggle('active')
+                menu.classList.toggle('active')
             })
 
             penguinsLink.addEventListener('mouseenter', () => {

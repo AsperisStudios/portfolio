@@ -17,6 +17,10 @@
     min-height: 100vh;
 }
 
+.scrollPage.active {
+    right: 300px;
+}
+
 .showcase{
     position: absolute;
     right: 0;
@@ -50,8 +54,10 @@
 }
 
 .showcase.active{
-    right:300px;
+    right:0px;
 }
+
+
 
 .logo{
     text-transform: uppercase;
@@ -74,15 +80,18 @@
     background-size: 30px;
     background-position: center;
     cursor: pointer;
-
+    z-index: 2000;
+    
   }
 
-  .toggle.active {
+.toggle.active {
     background: url('Close.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
     cursor: pointer;
+    z-index: 2000;
+
   }
 
 .showcase video {
@@ -189,19 +198,26 @@ align-items: center;
 }
 
 .menu{
-    position: absolute;
+    position: fixed;
     top: 0px;
-    right: 0px;
+    right: -300px;
     width: 300px;
     height: 100%;
     display: flex;
     align-items: top;
     justify-content: center;
     background-color:#164066;
+    z-index: 20;
+    transition: 500ms ease-in-out;
+}
+
+.menu.active {
+    right: 0px;
 }
 
 .menu ul li{
     margin-bottom: 5px;
+    z-index: 90;
 }
 
 .menu ul{
@@ -209,6 +225,7 @@ align-items: center;
     top: 150px;
     list-style: none;
     margin-bottom: 15px;
+    z-index: 90;
 }
 
 .menu ul li a{

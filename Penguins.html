@@ -10,11 +10,11 @@
     <section class="showcase">
         <header>
             <h2 class="logo">Pittsburgh Penguins</h2>
-                <div class="toggle"></div>
+                
         </header>
     </section>
 
-    
+    <div class="toggle"></div>
     <div class="menu">
         <ul>
             <li><a href='index.html'>Home</a></li>
@@ -94,10 +94,12 @@
     <script>
         const menuToggle = document.querySelector('.toggle');
         const showcase = document.querySelector('.showcase');
+        const menu = document.querySelector('.menu');
 
         menuToggle.addEventListener('click', () => {
                 menuToggle.classList.toggle('active')
                 showcase.classList.toggle('active')
+                menu.classList.toggle('active')
             })
 
     </script>
