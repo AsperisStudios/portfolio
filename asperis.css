@@ -5,7 +5,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+.homePage {
     overflow-y: hidden;
+}
+
+.scrollPage {
+    overflow-y: auto;
+    background-color: #0f0f2a;
+    min-height: 100vh;
 }
 
 .showcase{
@@ -114,17 +123,18 @@
 }
 
 .text h2 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 600;
     line-height: 1em;
     text-transform: uppercase;
 }
 
 .text h3 {
-    font-size: 12em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 400;
     line-height: 1em;
     text-transform: uppercase;
+    padding-bottom: 150px;
 }
 
 .textHome a{
@@ -187,7 +197,7 @@ align-items: center;
     display: flex;
     align-items: top;
     justify-content: center;
-    background-color:#0f0f2a;
+    background-color:#164066;
 }
 
 .menu ul li{
@@ -236,7 +246,23 @@ align-items: center;
     margin-top: 125px;
 }
 
+.pageReel {
+    position: relative;
+    display: block;
+    align-items: center;
+    width:90%;
+    z-index: 15;
+}
 
+.pageVideo {
+    position: relative;
+    display: block;
+    align-items: center;
+    width:80%;
+    z-index: 15;
+    padding-bottom: 25px;
+    padding-top: 100px;
+}
 
 .videoContainer {
     position: relative;
@@ -258,21 +284,6 @@ align-items: center;
     z-index: 10;
 }
     
-/*
-.iframeWrapper {
-    position: relative;
-    width: 100%
-    padding-top: 56.25%;
-}
-
-.iframeWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-*/
 
 @media (max-width: 768px) {
     

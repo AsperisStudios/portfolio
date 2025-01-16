@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="asperis.css">
     <title>Pittsburgh Penguins Projects</title>
 </head>
-<body>
+<body class="scrollPage">
     <section class="showcase">
-        <header>
+        <header
             <h2 class="logo">Pittsburgh Penguins</h2>
                 <div class="toggle"></div>
         </header>
@@ -23,25 +23,69 @@
             <li><a href='Penguins.html'>Penguins</a></li>
             <li><a href='#'>Contact</a></li>
         </ul>
-    </div>
+    </div>ssss
 
     <div class = "videoBody">
 
-        <video src="PenguinsGetLoud.mp4" class="centeredTopVid" muted autoplay controls loop>
+        <video src="PenguinsGetLoud.mp4" class="centeredTopVid" muted autoplay loop>
             </video>
             <!--REPLACE THIS WITH A WEBM Loop or Potentially a .Mov at 1920x1080 of the LOGO-->
         <div class="text">
             <h2>Pittsburgh Penguins Summer Internship</h2>
             <h1>Pittsburgh, PA (Remote) | PPG Paints Arena | May-August 2024</h1>
         </div>
-
-
-        <div class="videoContainer">
-            <iframe 
-              src="https://player.vimeo.com/video/1046185202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">  
-            </iframe>
+        
+        <video class = "pageReel" controls muted autoplay loop>    
+                <source
+                    src="https://d2faskma0apbui.cloudfront.net/ALL%20BOARDS%2016x9.mp4"
+                    type="video/mp4"
+                >
+                <!-- Link Above is for the TOP OF THE PAGE REEL  -->
+        </video>
+        <div class="text">
+            <h3>Penguins Summer 2024 Reel</h3>
         </div>
+
+        <video class = "pageVideo" controls muted autoplay loop>    
+            <source
+                src="https://d1mdk2i0fnqax0.cloudfront.net/All%20Screens%20Together.mp4"
+                type="video/mp4"
+            >
+            <!-- Link Above is for the FIRST VIDEO  -->
+        </video>
+
+
+        <div class="text">
+            <h1>Video 1 Description</h1>
+        </div>
+
+        <video class = "pageVideo" controls muted autoplay loop>    
+            <source
+                src="https://d1mdk2i0fnqax0.cloudfront.net/All%20Screens%20Together.mp4"
+                type="video/mp4"
+            >
+            <!-- Link Above is for the FIRST VIDEO  -->
+        </video>
+
+
+        <div class="text">
+            <h1>Video 2 Description</h1>
+        </div>
+
+        <video class = "pageVideo" controls muted autoplay loop>    
+            <source
+                src="https://d1mdk2i0fnqax0.cloudfront.net/All%20Screens%20Together.mp4"
+                type="video/mp4"
+            >
+            <!-- Link Above is for the FIRST VIDEO  -->
+        </video>
+
+        <div class="text">
+            <h1>Video 3 Description</h1>
+        </div>
+
     </div>
+
 
     <script>
         const menuToggle = document.querySelector('.toggle');
