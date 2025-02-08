@@ -300,19 +300,125 @@ align-items: center;
     justify-content: center;
     z-index: 10;
 }
-    
 
-@media (max-width: 768px) {
+
+.contact-heading {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #ebebeb;
+    margin: 50px 0;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.contact-image {
+    width: 50%;
+    text-align: center;
+}
+
+.contact-image img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 3px;
+    padding: 25px;
+}
+
+.contact-text {
+    width: 50%;
+    font-size: 1.5em;
+    color: #ebfbfb;
+    padding: 20px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 20px;
+}
+
+.form-container form {
+    width: 66%;
+    padding: 20px;
+    background: #164066;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+
+.form-container label {
+    display: block;
+    font-weight: 1200px;
+    color: #ebebeb;
+    padding: 5px;
     
-    .text {
+}
+
+.form-container input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f0f2a;
+    color: #ebebeb;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+button:hover{
+    background-color: #d91226;
+    transition: 500ms;
+}
+
+.direct-contact h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ebfbfb;
+    text-align: center;
+}
+
+.direct-contact p {
+    font: 1.5em;
+    margin-bottom: 10px;
+    color: #ebfbfb;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    
+    .textHome {
         text-align: left;
         left: 20px;
         padding: 0 20px; 
     }
 
     
-    .text a {
+    .textHome a {
         font-size: 2em;
+        display: block;
+        padding: 10px 0;
     }
 
     .showcase header {
@@ -323,7 +429,6 @@ align-items: center;
     
     .social {
         transform: scale(0.40);
-        left: 20px;
         bottom: 20px;
         position: fixed;
         justify-content: flex-start;

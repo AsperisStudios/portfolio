@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asperis.css">
+    <title>Contact</title>
+</head>
+<body class="scrollPage">
+
+    <h1 class="contact-heading">Contact Me</h1>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="Headshot-Arena.jpg" alt="Your Image">
+        </div>
+
+        <div class="contact-text">
+        <p>Brief description for myself! I'm glad you're reaching out and I can't wait to hear more about you. This work is my passion and I can't wait to see how we can collaborate.</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+
+        <form action="https://formspree.io/f/mjkgoeye" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea type="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="direct-contact">
+            <h2>Contact Me Directly</h2>
+            <p>(402) 419-1021</p>
+            <p>HarlieFerguson@icloud.com</p>
+            <p>Message me on Linkedin!</p>
+        </div>
+    </div>
+
+    <div class="toggle"></div>
+    <div class="menu">
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='Reel.html'>Reel</a></li>
+            <li><a href='UHC.html'>Utah</a></li>
+            <li><a href='Penguins.html'>Penguins</a></li>
+            <li> <a href='bvu.html'>BVU</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                menu.classList.toggle('active')
+            })
+
+    </script>
+    
+</body>
+</html>
