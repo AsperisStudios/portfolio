@@ -451,4 +451,16 @@ button:hover{
     .showcase {
         padding: 10px;
     }
+
+    .text h3 {
+        padding-bottom: 50px;
+    }
+
+    .pageReel {
+        width: 100%;
+    }
+    
+    .pageVideo {
+        width: 90%;
+    }
 }
