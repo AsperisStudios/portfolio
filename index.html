@@ -13,13 +13,18 @@
             </header>
 
 
-            <video id="background-video" src="2023Reel.mp4" muted autoplay loop></video>
+            <video id="background-video" muted autoplay loop>
+                <source
+                    src="https://d17d2yebo5o2z5.cloudfront.net/2025_Reel_Sound-v1.0.mp4"
+                    type="video/mp4"
+                    >
+            </video>
 
             <div class="Overlay"></div>
             
             <div class="textHome">
 
-                <a href ='Reel.html'>2024 Reel</a><br>
+                <a href ='Reel.html'>2025 Reel</a><br>
                 <a href = 'UHC.html' id="uhc">Utah Hockey Club</a><br>
                 <a href = 'Penguins.html' id="penguins">Pittsburgh Penguins</a><br>
                 <a href = 'BVU.html' id="bvu">BVU Education</a><br>
@@ -72,7 +77,7 @@
             })
 
             penguinsLink.addEventListener('mouseleave', () => {
-                changeVideo('2023Reel.mp4');
+                changeVideo('https://d17d2yebo5o2z5.cloudfront.net/2025_Reel_Sound-v1.0.mp4');
             })
 
             uhcLink.addEventListener('mouseenter', () => {
@@ -80,7 +85,7 @@
             })
 
             uhcLink.addEventListener('mouseleave', () => {
-                changeVideo('2023Reel.mp4');
+                changeVideo('https://d17d2yebo5o2z5.cloudfront.net/2025_Reel_Sound-v1.0.mp4');
             })
 
             bvuLink.addEventListener('mouseenter', () => {
@@ -88,7 +93,7 @@
             })
 
             bvuLink.addEventListener('mouseleave', () => {
-                changeVideo('2023Reel.mp4');
+                changeVideo('https://d17d2yebo5o2z5.cloudfront.net/2025_Reel_Sound-v1.0.mp4');
             })
 
             window.addEventListener('DOMContentLoaded', () => {
