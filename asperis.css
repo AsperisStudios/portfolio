@@ -26,7 +26,7 @@
     right: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: clamp(20px, 5vw, 80px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,7 +148,7 @@
 .textHome a{
     display: inline-block;
     text-align: left;
-    font-size: 5em;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 600;
     padding: 10px 0px;
     text-decoration: none;
@@ -288,8 +288,6 @@ align-items: center;
     width:100%;
     z-index: 15;
     padding-bottom: 15px;
-    border: 5px solid rgba(217, 217, 217, 0.2);
-    border-radius: 5px;
 }
 
 .videoContainer {
@@ -422,14 +420,15 @@ button:hover{
     .textHome {
         text-align: left;
         left: 20px;
-        padding: 0 20px; 
+        padding: 0 20px;
+        margin-top: 20;
     }
 
     
     .textHome a {
-        font-size: 2em;
+        font-size: 1.5em;
         display: block;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     .showcase header {
@@ -439,11 +438,21 @@ button:hover{
 
     
     .social {
-        transform: scale(0.40);
-        bottom: 20px;
-        position: fixed;
-        justify-content: flex-start;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(-50%) scale(0.20);
+    transform-origin: center;
+
+    gap: 20px;
     }
+    
+
 
     
     .logo {
@@ -454,8 +463,9 @@ button:hover{
 
     
     .toggle {
-        transform: scale(0.75);
-        right: 20px; 
+        transform: scale(0.5);
+        right: 10px; 
+        top: 15px;
     }
 
     
