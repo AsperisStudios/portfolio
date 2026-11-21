@@ -42,6 +42,33 @@ if (
     });
 }
 
+const projectGridCards = document.querySelectorAll('.project-grid .project-card');
+if (projectGridCards.length && window.matchMedia('(hover: none), (pointer: coarse)').matches) {
+    document.body.classList.add('has-touch-grid-controls');
+
+    projectGridCards.forEach((card) => {
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('.project-fullscreen')) return;
+
+            const wasVisible = card.classList.contains('project-card--controls-visible');
+            document.querySelectorAll('.project-card--controls-visible').forEach((visibleCard) => {
+                visibleCard.classList.remove('project-card--controls-visible');
+            });
+
+            if (!wasVisible) {
+                card.classList.add('project-card--controls-visible');
+            }
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.project-grid .project-card')) return;
+        document.querySelectorAll('.project-card--controls-visible').forEach((visibleCard) => {
+            visibleCard.classList.remove('project-card--controls-visible');
+        });
+    });
+}
+
 document.querySelectorAll('.project-fullscreen').forEach((button) => {
     button.addEventListener('click', async () => {
         const card = button.closest('.project-card');

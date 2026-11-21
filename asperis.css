@@ -764,6 +764,20 @@ button:hover{
     opacity: 1;
 }
 
+.project-card--featured:hover .project-card__video,
+.project-card--featured:focus-within .project-card__video {
+    filter: none;
+}
+
+.project-card--featured .project-card__caption {
+    background: none;
+}
+
+.project-card--featured:hover .project-card__caption,
+.project-card--featured:focus-within .project-card__caption {
+    opacity: 0;
+}
+
 .project-card--featured {
     width: 100%;
     margin-bottom: clamp(32px, 5vw, 72px);
@@ -838,18 +852,32 @@ button:hover{
     }
 }
 
-@media (hover: none) {
-    .project-fullscreen {
+@media (hover: none), (pointer: coarse) {
+    .has-touch-grid-controls .project-grid .project-card:not(.project-card--controls-visible) .project-card__video {
+        filter: none;
+    }
+
+    .has-touch-grid-controls .project-grid .project-card:not(.project-card--controls-visible) .project-card__caption,
+    .has-touch-grid-controls .project-grid .project-card:not(.project-card--controls-visible) .project-fullscreen {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .has-touch-grid-controls .project-grid .project-card--controls-visible .project-card__video,
+    .has-touch-grid-controls .project-grid .project-card:focus-visible .project-card__video {
+        filter: brightness(0.45);
+    }
+
+    .has-touch-grid-controls .project-grid .project-card--controls-visible .project-card__caption,
+    .has-touch-grid-controls .project-grid .project-card:focus-visible .project-card__caption,
+    .has-touch-grid-controls .project-grid .project-card--controls-visible .project-fullscreen,
+    .has-touch-grid-controls .project-grid .project-card:focus-visible .project-fullscreen {
         opacity: 1;
+    }
+
+    .has-touch-grid-controls .project-grid .project-card--controls-visible .project-fullscreen,
+    .has-touch-grid-controls .project-grid .project-card:focus-visible .project-fullscreen {
         pointer-events: auto;
-    }
-
-    .project-card__video {
-        filter: brightness(0.72);
-    }
-
-    .project-card__caption {
-        opacity: 1;
     }
 }
 
