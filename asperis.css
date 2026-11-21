@@ -75,7 +75,7 @@
     right: 40px;
     width: 100px;
     height: 100px;
-    background: url('Menu.png');
+    background: url('Images/Site/Menu.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -85,7 +85,7 @@
   }
 
 .toggle.active {
-    background: url('Close.png');
+    background: url('Images/Site/Close.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
