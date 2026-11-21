@@ -25,6 +25,7 @@
             <div class="textHome">
 
                 <a href ='Reel.html'>2026 Reel</a><br>
+                <a href = 'MSG.html' id="msg">Madison Square Garden</a><br>
                 <a href = 'UHC.html' id="uhc">Utah Hockey Club</a><br>
                 <a href = 'Penguins.html' id="penguins">Pittsburgh Penguins</a><br>
                 <a href = 'BVU.html' id="bvu">BVU Education</a><br>
@@ -45,9 +46,10 @@
             <ul>
                 <li><a href='index.html'>Home</a></li>
                 <li><a href='Reel.html'>Reel</a></li>
+                <li><a href='MSG.html'>MSG</a></li>
                 <li><a href='UHC.html'>Utah</a></li>
                 <li><a href='Penguins.html'>Penguins</a></li>
-                <li> <a href='BVU.html'>BVU</a></li>
+                <li><a href='BVU.html'>BVU</a></li>
                 <li><a href='contact.html'>Contact</a></li></div>
             </ul>
         </div>
@@ -59,6 +61,7 @@
             const backgroundVideo = document.getElementById('background-video')
             const penguinsLink = document.getElementById('penguins')
             const uhcLink = document.getElementById('uhc')
+            const msgLink = document.getElementById('msg')
             const bvuLink = document.getElementById('bvu')
 
             function changeVideo(videoSrc) {
@@ -85,6 +88,14 @@
             })
 
             uhcLink.addEventListener('mouseleave', () => {
+                changeVideo('https://d17d2yebo5o2z5.cloudfront.net/2026_Reel_Ferguson.v2.mp4');
+            })
+
+            msgLink.addEventListener('mouseenter', () => {
+                changeVideo('https://d17d2yebo5o2z5.cloudfront.net/MSG_Page/MSG26_REEL.mp4');
+            })
+
+            msgLink.addEventListener('mouseleave', () => {
                 changeVideo('https://d17d2yebo5o2z5.cloudfront.net/2026_Reel_Ferguson.v2.mp4');
             })
 

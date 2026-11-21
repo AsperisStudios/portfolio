@@ -26,6 +26,7 @@
                 <a href ='#'>2024 Reel</a><br>
                 <a href = '#' id="uhc">Utah Hockey Club</a><br>
                 <a href = '#' id="penguins">Pittsburgh Penguins</a><br>
+                <a href = 'MSG.html' id="msg">Madison Square Garden</a><br>
                 <a href = '#' id="bvu">BVU Education</a><br>
                 
                 
@@ -44,6 +45,7 @@
                 <li><a href='#'>Reel</a></li>
                 <li><a href='#'>Utah</a></li>
                 <li><a href='#'>Penguins</a></li>
+                <li><a href='MSG.html'>MSG</a></li>
                 <li><a href='#'>Contact</a></li></div>
             </ul>
         </div>
@@ -54,6 +56,7 @@
             const backgroundVideo = document.getElementById('background-video')
             const penguinsLink = document.getElementById('penguins')
             const uhcLink = document.getElementById('uhc')
+            const msgLink = document.getElementById('msg')
             const bvuLink = document.getElementById('bvu')
 
             function changeVideo(videoSrc) {
@@ -79,6 +82,14 @@
             })
 
             uhcLink.addEventListener('mouseleave', () => {
+                changeVideo('2023Reel.mp4');
+            })
+
+            msgLink.addEventListener('mouseenter', () => {
+                changeVideo('2023Reel.mp4');
+            })
+
+            msgLink.addEventListener('mouseleave', () => {
                 changeVideo('2023Reel.mp4');
             })
 

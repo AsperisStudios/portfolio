@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="asperis.css">
     <title>Motion Reel</title>
 </head>
-<body class="scrollPage">
+<body class="scrollPage project-page">
+    <div class="project-background" style="--project-background: url('Images/UtahBackground.png')" aria-hidden="true"></div>
     <section class="showcase">
         <header>
             <h2 class="logo">MOTION REEL</h2>
@@ -19,6 +20,7 @@
         <ul>
             <li><a href='index.html'>Home</a></li>
             <li><a href='Reel.html'>Reel</a></li>
+            <li><a href='MSG.html'>MSG</a></li>
             <li><a href='UHC.html'>Utah</a></li>
             <li><a href='Penguins.html'>Penguins</a></li>
             <li> <a href='BVU.html'>BVU</a></li>
@@ -26,40 +28,25 @@
         </ul>
     </div>
 
-    <div class = "videoBody">
-
-        <video class="centeredTopVid" muted autoplay loop>
-
-            </video>
-            <!--REPLACE THIS WITH A WEBM Loop or Potentially a .Mov at 1920x1080 of the LOGO-->
-        <div class="text">
-            <h2>2026 MOTION REEL</h2>
-            <h1>2026 Madison Square Garden (25-26) | Utah Hockey Club (24-25) | BVU 24  </h1>
+    <main class="videoBody project-video-body">
+        <div class="project-intro">
+            <div class="text">
+                <h2>2026 MOTION REEL</h2>
+                <h1>Madison Square Garden (25-26) | Utah Hockey Club (24-25) | BVU 24</h1>
+            </div>
         </div>
-        
-        <video class = "reel2025" controls loop>    
-                <source
-                    src="https://d17d2yebo5o2z5.cloudfront.net/2026_Reel_Ferguson.v2.mp4"
-                    type="video/mp4"
-                >
-                <!-- Link Above is for the TOP OF THE PAGE REEL  -->
-        </video>
 
-    </div>
+        <article class="project-card project-card--featured" tabindex="0">
+            <video class="project-card__video" controls loop playsinline>
+                <source src="https://d17d2yebo5o2z5.cloudfront.net/2026_Reel_Ferguson.v2.mp4" type="video/mp4">
+            </video>
+            <button class="project-fullscreen" type="button">Fullscreen</button>
+            <span class="project-fullscreen-status" role="status" aria-live="polite"></span>
+            <div class="project-card__caption"><h2>2026 Motion Reel</h2></div>
+        </article>
+    </main>
 
-
-    <script>
-        const menuToggle = document.querySelector('.toggle');
-        const showcase = document.querySelector('.showcase');
-        const menu = document.querySelector('.menu');
-
-        menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active')
-                showcase.classList.toggle('active')
-                menu.classList.toggle('active')
-            })
-
-    </script>
+    <script src="project.js"></script>
 
 </body>
 </html>
